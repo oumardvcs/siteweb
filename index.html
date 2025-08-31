@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ba Oumar</title>
+         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link href="index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="tabs.js"></script>
+</head>
+<body class = 'container flex justify-center w-screen flex-col gap-2  flex-wrap'>
+
+    <div class="navbar flex-1 inline-flex bg-pink-600 justify-start">
+        
+        <div id="btc-price">Chargement BTC...</div>
+            <!-- lien vers ton fichier JS -->
+        <script src="script.js"></script>
+    </div>
+
+
+    <div class ="tabs flex justify-center gap-x-5 flex-wrap">
+
+            <button class= " tablinks bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onclick="opentab(event,'profil')">
+                    Profil
+            </button>
+            <button class="tablinks bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onclick="opentab(event,'cv')">
+                CV
+            </button>
+            <button class="tablinks bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            Projects
+            </button>
+
+            <button class="tablinks bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full " onclick="opentab(event,'contact')">
+                Contact
+            </button>
+    </div>
+
+    <div id="profil" class=" tabcontent flex-1 flex flex-col  justify-center gap-5 mt-5  " >
+        <div class=" flex-1 frame flex justify-center items-center flex-col">
+
+            <img src="oumarpic.png" class="pic mt-4"> 
+            <div class=" personnal-infos mt-3">Ba Oumar, 26 years</div>
+            <div class="contact mt-3 inline-flex gap-x-4"> <img src="polytech.png" class="polytech"> <h1>Physics Engineer</h1></div>
+
+            <div class="location mt-3 inline-flex gap-x-4"><img src="location.svg" class = "location"> <h1>Belgium</h1></div>
+            
+
+        </div>
+    </div>
+    <div id="cv" class="tabcontent flex  justify-end items-center   mt-2 h-screen ">
+        <div class=" flex justify-center h-screen">
+             <iframe class="bg-green-600 flex-1 "  src="CV_NAPOV.pdf"></iframe>
+        </div>
+
+           
+    </div>
+    <div id="contact" class="tabcontent flex  justify-end items-center   h-screen ">
+        <div class="flex flex-col items-center h-screen justify-center mx-2">
+             
+                <img src="mobile.svg" class="icon "> +32466203011 </p>
+                <img src="mail.svg" class="icon  mt-4"> oumarbamail@yahoo.com </p>
+                
+             
+        </div>
+
+           
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import "tailwindcss";
+.container{
+
+    background-color: rgb(10, 27, 42);
+    font-family: "Michroma";
+    color: white;
+}
+
+.profil{
+    background-color: rgb(255, 164, 211);
+}
+.pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.frame{
+    background-color: rgb(10, 27, 42);
+}
+.polytech{
+    width: 100px;
+    height: 20px;
+
+}
+.tabcontent{
+    display: none;
+}
+.icon{
+    width: 20px;
+}
